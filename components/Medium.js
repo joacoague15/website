@@ -1,5 +1,5 @@
 const Medium = (props) => (
-<svg xmlnsDc="http://purl.org/dc/elements/1.1/" xmlnsCc="http://creativecommons.org/ns#" xmlnsRdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlnsSvg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlnsSodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlnsInkscape="http://www.inkscape.org/namespaces/inkscape" viewBox="0 0 256 256" version="1.1" preserveAspectRatio="xMidYMid" id="svg3771">
+<svg className="cls-1" xmlnsDc="http://purl.org/dc/elements/1.1/" xmlnsCc="http://creativecommons.org/ns#" xmlnsRdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlnsSvg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlnsSodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlnsInkscape="http://www.inkscape.org/namespaces/inkscape" viewBox="0 0 256 256" version="1.1" preserveAspectRatio="xMidYMid" id="svg3771">
   <metadata id="metadata3777">
     <rdfRDF>
       <ccWork rdfAbout="">
@@ -14,10 +14,11 @@ const Medium = (props) => (
 
 
     <style jsx> {`
-      
-
-        .cls-2:hover .cls-1{
-          fill: #000;
+        .cls-1 {
+          fill: #eeeeee;
+        }
+        .cls-1:hover{
+          fill: #ffff00;
         }
         @media (max-width: 1024px) {
           .cls-2:hover .cls-1{

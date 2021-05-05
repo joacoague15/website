@@ -88,6 +88,9 @@ class Publications extends Component {
             padding-bottom: 85px;
             overflow-x: hidden;
           }
+          h2 {
+              color: #8A509F;
+          }
           .posts-container {
             margin-top: 43px;
             width: 100%;

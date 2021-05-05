@@ -42,10 +42,10 @@ viewBox="0 0 455 455" /* style="enable-background:new 0 0 455 455;" */ xmlxspace
 </g>
 <style jsx> {`
   .cls-1{
-    fill:#000;
+    fill:#eeeeee;
   }
   .cls-2:hover .cls-1{
-    fill: #53C1B4;
+    fill: #FF0000;
   }
   @media (max-width: 1024px) {
     .cls-2:hover .cls-1{

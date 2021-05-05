@@ -8,10 +8,10 @@ const Github = (props) => (
     </g>
     <style jsx>{`
        .cls-1{
-          fill:#000;
+          fill:#eeeeee;
         }
         .cls-2:hover .cls-1{
-          fill: #EA1B3B;
+          fill: #BF5FFF	;
         }
         @media (max-width: 1024px) {
           .cls-2:hover .cls-1{

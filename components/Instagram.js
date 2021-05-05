@@ -12,10 +12,10 @@ const Instagram = (props) =>  (
     <path className="cls-1"  d="m257 150c-57.890625 0-105 47.109375-105 105s47.109375 105 105 105 105-47.109375 105-105-47.109375-105-105-105zm0 0"/>
       <style jsx> {`
         .cls-1{
-          fill:#000;
+          fill:#eeeeee;
         }
         .cls-2:hover .cls-1{
-          fill: #77549E;
+          fill: #ff86e0;
         }
         @media (max-width: 1024px) {
           .cls-2:hover .cls-1{

@@ -79,6 +79,9 @@ class Cases extends Component {
             padding-bottom: 85px;
             overflow-x: hidden;
           }
+          h2 {
+            color: #8A509F;
+          }
           .posts-container {
             margin-top: 43px;
             width: 100%;
@@ -91,7 +94,7 @@ class Cases extends Component {
               padding-bottom: 42px;
             }
             .posts-container {
-              margin: 24px 0 33px;
+              margin: 24px 0 33px; 
               display: block;
               overflow: hidden;
               width: 100%;

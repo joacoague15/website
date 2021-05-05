@@ -10,10 +10,10 @@ const Facebook = (props) => (
     </g>
     <style jsx> {`
         .cls-1{
-          fill:#000;
+          fill:#eeeeee;
         }
         .cls-2:hover .cls-1{
-          fill: #F4CD45;
+          fill: #4267B2;
         }
         @media (max-width: 1024px) {
           .cls-2:hover .cls-1{

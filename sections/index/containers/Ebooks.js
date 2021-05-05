@@ -68,6 +68,9 @@ class Ebooks extends Component {
           .ebooks-section {
             padding-bottom: 100px;
           }
+          h2 {
+            color: #8A509F;
+          }
           .ebooks-container {
             display: flex;
             flex-wrap: wrap;
