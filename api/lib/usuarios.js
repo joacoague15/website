@@ -7,8 +7,9 @@ const axios = require('axios');
             .then(response => {
                 let number = 0;;
                 const usersRequired = [4];
+                //4 lugares disponibles en el Array, que seran ocupados por usuarios de id=6
                 for(let i=0; i < response.data.length; i++) {
-                    if(number < 4 && response.data[i].userId == 1) {
+                    if(number < 4 && response.data[i].userId == 6) {
                         usersRequired[number] = response.data[i];
                         number++;
                     }
@@ -24,7 +25,8 @@ const axios = require('axios');
     }
 
 
-        //La otra forma de hacerlo
+        //Otra forma de hacerlo, guardando mas relacion con las otras APIS ya hechas 
+
         /*function getUsuarios (req, res) {
             getAllUsers()
             .then(response => {

@@ -4,7 +4,7 @@ import { render } from 'react-dom';
 
 
 function Users() {
-        const [data, setData] = useState([]);
+        const [data, setData] = useState([]); //Por default es un array vacio para evitar errores al renderizar
 
         useEffect(() => {
         fetch(`api/traerusuarios`)
@@ -16,9 +16,9 @@ function Users() {
             console.log(err);
             });
         }, []);
-
+        //Con flex-container tenemos acceso a todas las opciones flex dentro de ese div
         return (
-        <div className="flex-container">
+        <div className="flex-container"> 
             {data.map((item, i) => (
             <div key={i}>
                 <h2 className="title" key={item.id}>{item.title}</h2>
@@ -58,6 +58,8 @@ function Users() {
         </div>
         );
 }
+
+    // Tambien tenemos la version en class-based del componente 
 
 /*class Users extends Component {
 
