@@ -12,6 +12,9 @@ const Media = () => (
       )}
     </div>
     <style jsx>{`
+      .section-title {
+        color: #8A509F;
+      }
       .media-container {
         align-content: space-around;
         display: flex;

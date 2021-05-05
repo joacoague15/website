@@ -55,6 +55,7 @@ render() {
           justify-content: center;
         }
         .section-title {
+          color: #8A509F;
           display: block;
           text-align: center;
           margin-bottom:0.5em;

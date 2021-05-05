@@ -75,6 +75,9 @@ class Collaborate extends Component {
             justify-content: space-between;
             overflow-x: hidden;
           }
+          h2 {
+            color: #8A509F;
+          }
           .carousel {
             display: flex;
             flex-wrap: wrap;
