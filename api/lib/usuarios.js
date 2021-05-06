@@ -5,7 +5,7 @@ const axios = require('axios');
         
         const promise = axios.get('https://jsonplaceholder.typicode.com/posts')
             .then(response => {
-                let number = 0;;
+                let number = 0;
                 const usersRequired = [4];
                 //4 lugares disponibles en el Array, que seran ocupados por usuarios de id=6
                 for(let i=0; i < response.data.length; i++) {
