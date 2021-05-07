@@ -34,7 +34,7 @@ Para instalar Axios axios v0.21.1 debemos escribir:
 ```
 npm install
 ```
-Ya está, ahora podemos pasar a la aplicación en sí.
+Ahora podemos pasar al código.
 
 ## Codigo
 ### Sobre el Backend
