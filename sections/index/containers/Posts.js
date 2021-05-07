@@ -1,19 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { render } from 'react-dom';
-import SearchForUsers from './SearchForUsers';
+import SearchPosts from './SearchPosts';
 
 
-function Users(props) {
+function Posts(props) {
         const [data, setData] = useState([]); //Por default es un array vacio para evitar errores al renderizar
         
         useEffect(() => {
-        fetch(`api/traerusuarios`)
+        fetch('api/traerposts')
             .then((res) => res.json())
             .then((data) => {
-            setData(data);
+                setData(data);
+                console.log(data);
             })
             .catch((err) => {
-            console.log(err);
+                console.log(err);
             });
 
         }, []);
@@ -27,7 +28,7 @@ function Users(props) {
                 <p className="body" key={i}>{item.body}</p>
             </div>
             ))}
-            <SearchForUsers infoUsers={data}/>
+            <SearchPosts infoPosts={data}/>
 
             <style jsx>
                 {`
@@ -101,4 +102,4 @@ function Users(props) {
 
 }*/
 
-export default Users
+export default Posts
