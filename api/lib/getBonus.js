@@ -8,6 +8,7 @@ const axios = require('axios');
                 const postsRequired = [];
                 for (let i=0; i < response.length; i++) {
                     if(response[i].userId == 6)
+                        //postsRequired son aquellos posts de id 6
                         postsRequired.push(response[i])
                 }
                 res.json(postsRequired);

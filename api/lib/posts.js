@@ -1,5 +1,4 @@
 const request = require('request');
-const axios = require('axios');
 
         function getPosts (req, res) {
             getAllPosts()
@@ -23,8 +22,6 @@ const axios = require('axios');
             
         }
 
-
-
         function getAllPosts () {
             return new Promise(function(resolve, reject) {
                 request({
@@ -44,28 +41,3 @@ const axios = require('axios');
         }
 
 module.exports = { getPosts } 
-
-//function getPosts (req, res) {
-        
-        /*const promise = axios.get('https://jsonplaceholder.typicode.com/posts')
-            .then(response => {
-                let number = 0;
-                const postsRequired = [4];
-                //4 lugares disponibles en el Array, que seran ocupados por posts de id=6
-                for(let i=0; i < response.data.length; i++) {
-                    if(number < 4 && response.data[i].userId == 6) {
-                        postsRequired[number] = response.data[i];
-                        number++;
-                    }
-                }
-                console.log(postsRequired);
-                res.json(postsRequired);
-            })
-            .catch(error => {
-                console.log(error);
-            });
-
-        return promise;*/
-
-
-        //Otra forma de hacerlo, guardando mas relacion con las otras APIS ya hechas 

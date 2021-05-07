@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { render } from 'react-dom';
 import SearchPosts from './SearchPosts';
 
 
 function Posts() {
         const [data, setData] = useState([]); //Por default es un array vacio para evitar errores al renderizar
-        const [hideBonus, setHideBonus] = useState({hide: false})
+        const [hideBonus, setHideBonus] = useState({hide: false}) //State para aparecer/ocultar el componente SearchPosts.js
 
         useEffect(() => {
         fetch('api/traerposts')
@@ -85,44 +84,5 @@ function Posts() {
         </div>
         );
 }
-
-    // Version hecha con class de Users.js, más fiel a los otros componentes de la app
-
-/*class Users extends Component {
-
-    constructor(props){
-        super(props);
-        this.state = {
-            data: []
-        };
-
-    }
-
-
-    componentDidMount() {
-        fetch(`api/traerusuarios`)
-            .then((res) => res.json())
-            .then((data) => {
-                this.setState({data: data});
-            })
-            .catch((err) => {
-                console.log(err)
-            });
-    }
-
-        render() {
-            return(
-                <div className="flex-container">
-                    {this.state.data.map((item, i) => (
-                    <div key={i}>
-                        <h2 className="title" key={item.id}>{item.title}</h2>
-                        <p className="body" key={i}>{item.body}</p>
-                </div>
-                ))}
-                
-            )
-        }
-
-}*/
 
 export default Posts

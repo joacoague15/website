@@ -2,10 +2,10 @@ import axios from 'axios';
 import React, {useState, useEffect} from 'react'
 
 function SearchPosts() {
-    const [searched, setSearched] = useState('');
-    const [posts, setPosts] = useState([]);
+    const [searched, setSearched] = useState(''); //state del input del usuario
+    const [posts, setPosts] = useState([]); //los posts con id6 traidos de la api
     const [postsToRender, setPostsToRender] = useState([]);
-    const [infoUsers, setInfoUsers] = useState([]);
+    const [infoUsers, setInfoUsers] = useState([]); //state de la informacion del usuario
 
     const postsFounded = [];
 
@@ -31,6 +31,7 @@ function SearchPosts() {
 
     const searchPosts = () => {
         for(let i=0; i < posts.length; i++) {
+            //includes() permite chequear si el post contiene la palabra buscada
             if(posts[i].title.includes(searched))
                 postsFounded.push(posts[i]);
         }
@@ -54,7 +55,8 @@ function SearchPosts() {
             {postsToRender.map((item, i) => (
             <div key={i}>
                 <h2 key={item.id}>{item.title}</h2>
-                <h2 key={i}>{infoUsers.name}</h2>
+                <h2 key={i}>Nombre: {infoUsers.name}</h2>
+                <h2 key={i+1}>Email: {infoUsers.email}</h2>
             </div>
             
             ))}

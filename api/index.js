@@ -40,6 +40,7 @@ Router.post('/contacto', mailContacto)
 Router.post('/trabajo', upload.single('cv'), mailTrabajo, mailTrabajoError) 
 //GET de los primeros 4 items con userId 6
 Router.get('/traerposts', getPosts)
+//GET de todos los posts con userId 6
 Router.get('/traerbonus', getOnlyUserPosts)
 
 module.exports = Router
