@@ -5,7 +5,6 @@ const axios = require('axios');
             getAllPosts()
             .then(response => {
                 
-
                 const postsRequired = [];
                 for (let i=0; i < response.length; i++) {
                     if(postsRequired.length >= 4)
